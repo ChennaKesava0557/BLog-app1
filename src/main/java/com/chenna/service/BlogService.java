@@ -38,13 +38,7 @@ public class BlogService {
 		blog.setAuthor(updateBlog.getAuthor());
 		return blogrefo.save(blog);
 
-//		 return blogrefo.findById(id).map(blog -> {
-//			 
-//	            blog.setTitle(updatedBlog.getTitle());
-//	            blog.setContent(updatedBlog.getContent());
-//	            blog.setAuthor(updatedBlog.getAuthor());
-//	            return blogRepository.save(blog);
-//	        }).orElseThrow(() -> new RuntimeException("Blog not found with ID: " + id));
+
 	}
 
 	public void deleteBlog(Long id) {
